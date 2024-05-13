@@ -1,0 +1,244 @@
+:root{
+    --main-color: #00FFFF;
+    --black:#13131a;
+    --bg:#005f69;
+    --ref:#5F9EA0;
+    --border:.1rem solid rgba(255,255,255,.3);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+  section{
+    padding:2rem 7%;
+  }
+  body{
+    min-height: 100vh;
+    background: var(--black);
+    background-size: cover;
+    background-position: center;
+  }
+  .header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  .header .navbar a{
+    margin:0 3rem;
+    font-size: 1.6rem;
+    color: var(--ref);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+  }
+  .Logo{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  /* Home */
+  .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .content{
+    max-width: 60rem;
+  }
+  
+  .home .content h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:var(--bg);
+  }
+  .about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+  }
+  .home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color: var(--ref);
+  }
+  /* About */
+  .about .row .image{
+    flex:1 1 45rem;
+  }
+  
+  .about .row .image img{
+    width: 100%;
+  }
+  .about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+  }
+  .about h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--bg);
+    text-align: center;
+    text-decoration: underline;
+  }
+  .about .row .content h3{
+    font-size: 3rem;
+    color:var(--bg);
+  }
+  
+  .about .row .content p{
+    font-size: 1.6rem;
+    color:var(--ref);
+    padding:1rem 0;
+    line-height: 1.8;
+  }
+  /*Projects*/
+  .projects .heading{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--bg);
+    text-align: center;
+    text-decoration: underline;
+  }
+  .projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+  }
+  
+  .projects .box-container .box{
+    border:var(--border);    
+  }
+  
+  .projects .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+  }
+  
+  .projects .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .projects .box-container .box:hover .image img{
+    transform: scale(1.2);
+  }
+  
+  .projects .box-container .box .content{
+    padding:2rem;
+  }
+  
+  .projects .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:var(--bg);
+  }
+  
+  .projects .box-container .box .content .title:hover{
+    color:var(--main-color);
+  }
+  
+  .projects .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  
+  .projects .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:var(--ref);
+    padding:1rem 0;
+  }
+  /* Resume */
+  #resume {
+    background-color: var(--black);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #resume a {
+    background-color: var(--ref);
+    color: var(--bg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  #resume h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--bg);
+    text-align: center;
+    text-decoration: underline;
+  }
+  #resume p{
+    font-size: 1.6rem;
+    color:var(--ref);
+    padding:1rem 0;
+    line-height: 1.8;
+  }
+  
+  #resume a:hover {
+    background-color: var(--main-color);
+  }
+  /* Contact details */
+  #contact h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--bg);
+    text-align: center;
+    text-decoration: underline;
+  }
+  #contact p{
+    font-size: 1.6rem;
+    color:var(--ref);
+    padding:1rem 0;
+    line-height: 1.8;
+  }
+  /*Footer */
+  footer{
+    background: var(--black);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: var(--main-color);
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align: center;
+  }
